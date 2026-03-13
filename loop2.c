@@ -1,4 +1,4 @@
-// Write a C program to print the first n odd/even natural numbers.
+// Write a C program to print the first n evan & odd natural numbers.
 
 #include <stdio.h>
 int main()
@@ -11,14 +11,12 @@ int main()
     printf("Evan : ");
     for (i = 1; i <= n; i++)
     {
-        if (i % 2 == 0)
-            printf("%d ", i);
+        printf("%d ", 2 * i);
     }
 
     printf("\nOdd : ");
     for (i = 1; i <= n; i++)
     {
-        if (i % 2 != 0)
-            printf("%d ", i);
+        printf("%d ", 2 * i - 1);
     }
 }
