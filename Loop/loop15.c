@@ -1,4 +1,4 @@
-// Write a C program to find the power of a number using a for loop.
+// Write a C program to find the power or inverse of a number using a for loop.
 
 #include <stdio.h>
 int main()
@@ -12,15 +12,14 @@ int main()
     printf("Enter the power of this number : ");
     scanf("%d", &pow);
 
-    if (pow < 1)
-        printf("Error! Please enter a natural number");
-    else
+    for (i = 1; i <= ((pow < 0) ? -pow : pow); i++)
     {
-        for (i = 1; i <= pow; i++)
-        {
-            res *= base;
-        }
-        // output
-        printf("%g to the power %d = %g", base, pow, res);
+        res *= base;
     }
+
+    // output
+    if (pow >= 0)
+        printf("%g to the power %d = %g", base, pow, res);
+    else
+        printf("%g to the power %d = %g", base, pow, 1 / res);
 }
