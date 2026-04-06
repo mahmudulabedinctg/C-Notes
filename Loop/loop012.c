@@ -20,7 +20,8 @@ int main()
         for (i = 2; i <= n; i++)
         {
             scanf("%d", &num);
-            (num > max) ? (max = num) : (max = max);
+
+            max = (num > max) ? num : max;
         }
         printf("The maximum number is %d", max);
     }

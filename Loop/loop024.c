@@ -4,10 +4,10 @@
 #include <math.h>
 int main()
 {
-    int n, d, i, x, p;
+    long long n, d, i, x, p;
 
     // input a number
-    scanf("%d", &n);
+    scanf("%lld", &n);
 
     d = floor(log10(n)) + 1;
 
